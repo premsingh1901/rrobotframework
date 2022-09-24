@@ -1,17 +1,31 @@
 *** Settings ***
 Documentation    Suite is for POC
 Library  SeleniumLibrary
-Variables
+Variables    ../Config/config.yml
+Variables    ../TestData/test_data.yml
+Resource    ../Resources/amazon.robot
 
-
+Test Setup   close browser
 
 *** Test Cases ***
 open_amazon
     [Tags]    amazon1
-    open browser    https://www.amazon.in/      chrome
-    maximize browser window
-    set selenium implicit wait
-    select radio button
+
+    open browser    ${env.URL}      ${env.BROWSER}
+    Maximize Browser Window
+    set selenium implicit wait      10s
+    amazon.enter_item_to_search     ${poc_amazon.mobile_search}
+
+
+
+
+
+    close browser
+
+
+
+
+
 
 
 

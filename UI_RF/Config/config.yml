@@ -1,3 +1,3 @@
-env:
-  url:"https://www.amazon.in/"
-  browser:"chrome"
+ENV:
+  URL:  "https://www.amazon.in/"
+  BROWSER:  "chrome"
