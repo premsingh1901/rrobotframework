@@ -5,7 +5,7 @@ Variables    ../Config/config.yml
 Variables    ../TestData/test_data.yml
 Resource    ../Resources/amazon.robot
 
-Test Setup   close browser
+Test Teardown   close browser
 
 *** Test Cases ***
 open_amazon
@@ -17,10 +17,6 @@ open_amazon
     amazon.enter_item_to_search     ${poc_amazon.mobile_search}
 
 
-
-
-
-    close browser
 
 
 

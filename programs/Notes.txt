@@ -1,0 +1,99 @@
+List:
+    Use square bracktes to create any list. Its ordered list and can have duplicate values. Also, mutable in nature.
+
+len(list) - Get the length of the list, string, tuple amd set
+update -> we can not update the index of the list if its not available in the list.
+type(List)- > It will show the type of list.
+append(x) - only one element at a time. And it will add the element at last.
+insert(i, x) - Insert an item at a given position. The first argument is the index of the element before which to insert.
+extend(list) - Its used to exptend the list, tuple and string. Example: list1.extend(list2)
++ -> concatenation can be done with lists
+index(x)- return the index of the item
+remove(x)- Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.
+sort(reverse=false)- Sort the items of the list in place (the arguments can be used for sort customization
+reverse()- Reverse the elements of the list in place
+pop() - last element will get remove default we can pass the index as well.
+count(x)- Return the number of times x appears in the list.
+set(list)- No duplicate
+clear()- Remove all items from the list. Equivalent to del a[:]
+copy() - Deep copy default, shallow copy when we used ==
+        - Shollow copy shares the addresses
+        - Deep copy do not share address a new brand list will get created.
+del list - Command will delete from memory
+    example: del list
+
+
+max(list)- Retrun maximum number
+min(list)- Return minimum number
+sorted(list)- It will create a brand new list with sort order and not affact the existing list.
+
+sum()- Add all the if items
+0 - false
+1 and greater more - True
+list_num*=2 -- Twice all the numbers
+all()- If we want to check if zero is there in list or not  -> for empty it will return True
+any() - atleast one should be 1 or greater -> -> for empty it will return false
+
+
+
+
+
+
+Slicing
+- List slicing operation creates the deep copy of the list.
+    list[start_index:end_index]
+- We can go beyong in the list from end.
+- If there is no item then it will return empty list.
+- Start index should be less than end index.
+in => check the item in list
+
+
+String:
+input()
+slicing operation same as list
+del
+startswith()
+endswith()
+count() - char or string
+lower()
+upper()
+== -> equals() of Java
+find()- - return index return -1 is not exist
+index() - Error if not exist
+split() - return the list
+join() - seprated by mentioned
+isupper()
+
+
+Tupels
+ordered list as list but immutable
+defined as ()
+we can combined 2 tuples
+tuple*3 - 3 times
+mixed tuple
+my tuple= 1, hello, 6.8 - By default tuple
+nested tuple we can have
+slice work here as if well
+index()
+in
+not in
+sum()
+
+Immutabilty of tuples:
+once created, can not be updated.
+Note: List within the tuple can be updated.
+del  - Can not delete the field but can delete entire tuple.
+
+zip()-> we can zip the 2 tuples and every field will have one field of tuple 1 and another will from tuple 2
+ It will return a object. we can covert to list or tuple.
+
+ we can unzipped -> tup1, tup2=zip(*result)
+
+
+
+
+
+
+
+
+
