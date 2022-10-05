@@ -1,0 +1,7 @@
+mylist= ["prem", "for", "happy", "prem", "prem", "hitu", "prem", "hitu"]
+s=set(mylist)
+
+
+
+# print(mylist1)
+print(s)
